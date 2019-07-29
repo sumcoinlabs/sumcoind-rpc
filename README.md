@@ -70,8 +70,6 @@ var run = function() {
 };
 ```
 
-## License
 
-**Code released under [Classic Proprietary license](http://slicewallet.org/license.html).**
 
-Copyright (C) 2016-2019 Sigma Systems Inc.
+Copyright (C) 2016-2019 Sumcoin
