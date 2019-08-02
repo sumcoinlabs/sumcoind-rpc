@@ -19,7 +19,7 @@ npm install bitcoind-rpc
 
 ```javascript
 var run = function() {
-  var bitcore = require('bitcore');
+  var bitcore = require('bitcore');  //todo
   var RpcClient = require('bitcoind-rpc');
 
   var config = {
