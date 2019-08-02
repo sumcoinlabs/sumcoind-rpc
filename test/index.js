@@ -261,7 +261,7 @@ describe('RpcClient', function() {
     client.getBalance('n28S35tqEMbt6vNad7A5K3mZ7vdn8dZ86X', 6, function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Connection Rejected: 401 Unnauthorized');
+      error.message.should.equal('Sumcoin JSON-RPC: Connection Rejected: 401 Unnauthorized');
       done();
     });
 
@@ -291,7 +291,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Connection Rejected: 403 Forbidden');
+      error.message.should.equal('Sumcoin JSON-RPC: Connection Rejected: 403 Forbidden');
       done();
     });
 
@@ -322,7 +322,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Work queue depth exceeded');
+      error.message.should.equal('Sumcoin JSON-RPC: Work queue depth exceeded');
       done();
     });
 
@@ -356,7 +356,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Request Error: write EPIPE');
+      error.message.should.equal('Sumcoin JSON-RPC: Request Error: write EPIPE');
       done();
     });
 
@@ -419,7 +419,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Request Error: connect ECONNREFUSED');
+      error.message.should.equal('Sumcoin JSON-RPC: Request Error: connect ECONNREFUSED');
       done();
     });
 
@@ -450,7 +450,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Error Parsing JSON: Unexpected token o in JSON at position 1');
+      error.message.should.equal('Sumcoin JSON-RPC: Error Parsing JSON: Unexpected token o in JSON at position 1');
       done();
     });
 
@@ -481,7 +481,7 @@ describe('RpcClient', function() {
     client.getDifficulty(function(error, parsedBuf) {
       requestStub.restore();
       should.exist(error);
-      error.message.should.equal('Bitcoin JSON-RPC: Error Parsing JSON: Unexpected end of JSON input');
+      error.message.should.equal('Sumcoin JSON-RPC: Error Parsing JSON: Unexpected end of JSON input');
       done();
     });
 
