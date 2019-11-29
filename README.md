@@ -1,9 +1,9 @@
 sumcoind-rpc.js
 ===============
 
-[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc.svg?style=flat-square)](https://www.npmjs.org/package/bitcoind-rpc)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcoind-rpc.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcoind-rpc)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcoind-rpc.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcoind-rpc?branch=master)
+[![NPM Package](https://img.shields.io/npm/v/bitcoind-rpc.svg?style=flat-square)](https://www.npmjs.org/package/sumcoind-rpc)
+[![Build Status](https://img.shields.io/travis/bitpay/sumcoind-rpc.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcoind-rpc)
+[![Coverage Status](https://img.shields.io/coveralls/bitpay/sumcoind-rpc.svg?style=flat-square)](https://coveralls.io/r/bitpay/sumcoind-rpc?branch=master)
 
 A client library to connect to Sumcoin Core RPC in JavaScript.
 
@@ -12,15 +12,15 @@ A client library to connect to Sumcoin Core RPC in JavaScript.
 sumcoind-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install bitcoind-rpc
+npm install sumcoind-rpc
 ```
 
 ## Examples
 
 ```javascript
 var run = function() {
-  var bitcore = require('bitcore');  //todo
-  var RpcClient = require('bitcoind-rpc');
+  var bitcore = require('sumcore');  
+  var RpcClient = require('sumcoind-rpc');
 
   var config = {
     protocol: 'http',
@@ -72,4 +72,4 @@ var run = function() {
 
 
 
-Copyright (C) 2016-2019 Sumcoin
+Copyright (C) 2016-2020 Sumcoin
